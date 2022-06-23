@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #122A57;
+    --color-light:#fff;
 }
 
 ul {
@@ -27,13 +32,17 @@ div img {
     min-width: 320px;
 
 }
+body{ 
+    width:100%;
+    height:100%
+}
 
 header {
-    background-color: #122A57;
+    background-color: var(--primary-color);
     height: 100px;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: var(--color-light);
 }
 
 header .list-items {
@@ -45,7 +54,7 @@ header .list-items {
 }
 
 .list-items li a {
-    color: #fff;
+    color: var(--color-light);
 }
 
 header .menu {
@@ -63,14 +72,14 @@ header .menu {
 }
 
 .texto-apresentacao h1 {
-    color: #122A57;
+    color: --color-blue;
     font-size: 48px;
     margin-bottom: 10px;
 }
 
 .btn {
-    background-color: #122A57;
-    color: #fff;
+    background-color:var(--primary-color);
+    color: var(--color-light);
     text-align: center;
     border-radius: 30px;
     width: 180px;
@@ -88,7 +97,7 @@ header .menu {
 
 #quem-somos h2 {
     font-size: 32px;
-    color: #122A57;
+    color:var(--primary-color);
     display: flex;
     margin-bottom: 20px;
 }
@@ -98,7 +107,7 @@ header .menu {
     height: 50px;
     width: 5px;
     margin-right: 5px;
-    background-color: #122A57;
+    background-color: var(--primary-color);
     position: relative;
 }
 
@@ -112,7 +121,7 @@ header .menu {
 }
 
 .container-externo {
-    background-color: #122A57;
+    background-color: var(--primary-color);
     width: 100%;
 }
 
@@ -123,7 +132,7 @@ header .menu {
 }
 
 #servicos h2 {
-    color: #fff;
+    color: var(--color-light);
     font-size: 32px;
     margin-bottom: 20px;
 }
@@ -139,7 +148,7 @@ header .menu {
 
 .item-servico a {
     width: 220px;
-    background-color: #fff;
+    background-color: var(--color-light);
     border-radius: 30px;
     height: 50px;
     text-align: center;
@@ -147,7 +156,7 @@ header .menu {
     line-height: 50px;
     text-decoration: none;
     padding: 5px 10px;
-    color: #122A57;
+    color: var(--primary-color);
     font-size: 12px;
     font-weight: 700;
 }
@@ -155,7 +164,7 @@ header .menu {
 .item-servico p {
     font-weight: 700;
     font-size: 18px;
-    color: #fff;
+    color: var(--color-light);
     margin-top: 20px;
 }
 
@@ -183,7 +192,7 @@ header .menu {
 
 .item-plano {
     flex: 1;
-    border: 5px solid #122A57;
+    border: 5px solid var(--primary-color);
     margin-right: 20px;
     padding: 10px;
     max-width: 240px;
@@ -204,7 +213,7 @@ header .menu {
 
 .item-plano h3::after {
     content: "";
-    background-color: #122A57;
+    background-color: var(--primary-color);
     width: 100%;
     height: 3px;
     margin-top: 20px;
@@ -230,12 +239,12 @@ header .menu {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #122A57;
+    background-color: var(--primary-color);
     margin-right: 5px;
 }
 
 footer {
-    background-color: #122A57;
+    background-color: var(--primary-color);
     height: 70px;
     display: flex;
     align-items: center;
@@ -243,7 +252,7 @@ footer {
 
 footer .footer {
     justify-content: space-between;
-    color: #fff
+    color: var(--color-light)
 }
 
 @media(max-width:992px) {
